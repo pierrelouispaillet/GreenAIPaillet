@@ -13,6 +13,8 @@ from pyJoules.energy_meter import measure_energy
 from pyJoules.handler.csv_handler import CSVHandler
 import keras.backend
 
+from experiment_impact_tracker.compute_tracker import ImpactTracker
+
 np.random.seed(1000)
 
 plt.style.use('fivethirtyeight')
@@ -147,9 +149,6 @@ def AlexNet(i):
 	print("\nCalculating the accuracy over the testset:")
 	accuracy = AlexNet.evaluate(x_test, y_test, verbose=1) 
     
-    
-
-
     
 
 
