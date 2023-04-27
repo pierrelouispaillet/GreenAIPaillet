@@ -1,8 +1,7 @@
-import tensorflow
+import tensorflow 
 from tensorflow import keras
 import matplotlib.pyplot as plt 
 import numpy as np
-import energyusage
 import time
 from sklearn.utils.multiclass import unique_labels
 from keras.utils import to_categorical
@@ -13,7 +12,22 @@ from pyJoules.energy_meter import measure_energy
 from pyJoules.handler.csv_handler import CSVHandler
 import keras.backend
 
-from experiment_impact_tracker.compute_tracker import ImpactTracker
+
+from pyJoules.device.rapl_device import RaplPackageDomain
+from pyJoules.device.nvidia_device import NvidiaGPUDomain
+
+
+
+from tensorflow.compat.v1 import ConfigProto
+from tensorflow.compat.v1 import InteractiveSession
+
+devices = tensorflow.config.experimental.list_physical_devices('GPU')
+tensorflow.config.experimental.set_memory_growth(devices[0], True)
+
+
+
+	
+
 
 np.random.seed(1000)
 
@@ -24,7 +38,8 @@ Accuracy=[]
 
 csv_handler = CSVHandler('result.csv')
 
-def AlexNet(i):
+@measure_energy(handler=csv_handler, domains=[RaplPackageDomain(0), NvidiaGPUDomain(0)])
+def AlexNet(i,j):
 #Instantiation
 	AlexNet = Sequential()
 
@@ -133,8 +148,8 @@ def AlexNet(i):
 
 	#Defining the parameters
 	batch_size= 32
-	epochs= 2
-	train_size = 1  # The percentage of the training set to be used during training (0.0 - 1.0) 
+	epochs= j
+	train_size = i  # The percentage of the training set to be used during training (0.0 - 1.0) 
     
 	 # apply the train_size of the trainset
 
@@ -148,11 +163,16 @@ def AlexNet(i):
 
 	print("\nCalculating the accuracy over the testset:")
 	accuracy = AlexNet.evaluate(x_test, y_test, verbose=1) 
+
+	Accuracy.append(accuracy)
     
     
 
 
-for i in [1]:
-    AlexNet(i)
+for i in [0.2,0.4,0.6,0.8,1]:
+    for j in [5,10,15,20]:
+    	AlexNet(i,j)
+
+csv_handler.save_data()
 
 print(Accuracy)

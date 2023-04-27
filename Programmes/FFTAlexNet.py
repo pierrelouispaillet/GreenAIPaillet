@@ -86,8 +86,8 @@ def create_fourier_alexnet():
 
 
 # Compile and train the model
-model = create_alexnet()
+model = create_fourier_alexnet()
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
-history = model.fit(train_images, train_labels, batch_size=128, epochs=1, validation_split=0.1)
+history = model.fit(train_images, train_labels, batch_size=128, epochs=5, validation_split=0.1)
 
 
