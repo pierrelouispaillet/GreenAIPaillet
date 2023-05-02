@@ -24,7 +24,7 @@ from tensorflow.compat.v1 import InteractiveSession
 devices = tensorflow.config.experimental.list_physical_devices('GPU')
 tensorflow.config.experimental.set_memory_growth(devices[0], True)
 
-
+import energyusage
 
 	
 
@@ -38,7 +38,7 @@ Accuracy=[]
 
 csv_handler = CSVHandler('result.csv')
 
-@measure_energy(handler=csv_handler, domains=[RaplPackageDomain(0), NvidiaGPUDomain(0)])
+#@measure_energy(handler=csv_handler, domains=[RaplPackageDomain(0), NvidiaGPUDomain(0)])
 def AlexNet(i,j):
 #Instantiation
 	AlexNet = Sequential()
@@ -169,9 +169,13 @@ def AlexNet(i,j):
     
 
 
-for i in [0.2,0.4,0.6,0.8,1]:
-    for j in [5,10,15,20]:
-    	AlexNet(i,j)
+#for i in [0.2,0.4,0.6,0.8,1]:
+    #for j in [5,10,15,20]:
+    	#AlexNet(i,j)
+
+#AlexNet(1,10)
+
+energyusage.evaluate(AlexNet, 1 , 10, pdf = True)
 
 csv_handler.save_data()
 
