@@ -21,8 +21,6 @@ from pyJoules.device.nvidia_device import NvidiaGPUDomain
 from tensorflow.compat.v1 import ConfigProto
 from tensorflow.compat.v1 import InteractiveSession
 
-devices = tensorflow.config.experimental.list_physical_devices('GPU')
-tensorflow.config.experimental.set_memory_growth(devices[0], True)
 
 import energyusage
 
@@ -113,20 +111,14 @@ def AlexNet(i,j):
 	from sklearn.model_selection import train_test_split
 	x_train,x_val,y_train,y_val=train_test_split(x_train,y_train,test_size=.3)
 
-	#Dimension of the CIFAR10 dataset
-	print((x_train.shape,y_train.shape))
-	print((x_val.shape,y_val.shape))
-	print((x_test.shape,y_test.shape))
+	
 
 	#Since we have 10 classes we should expect the shape[1] of y_train,y_val and y_test to change from 1 to 10
 	y_train=to_categorical(y_train)
 	y_val=to_categorical(y_val)
 	y_test=to_categorical(y_test)
 
-	#Verifying the dimension after one hot encoding
-	print((x_train.shape,y_train.shape))
-	print((x_val.shape,y_val.shape))
-	print((x_test.shape,y_test.shape))
+	
 
 	#Image Data Augmentation
 	from keras.preprocessing.image import ImageDataGenerator
@@ -173,9 +165,9 @@ def AlexNet(i,j):
     #for j in [5,10,15,20]:
     	#AlexNet(i,j)
 
-#AlexNet(1,10)
+AlexNet(1,10)
 
-energyusage.evaluate(AlexNet, 1 , 10, pdf = True)
+#energyusage.evaluate(AlexNet, 1 , 10, pdf = True)
 
 csv_handler.save_data()
 
