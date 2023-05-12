@@ -38,7 +38,7 @@ Accuracy=[]
  
 csv_handler = CSVHandler('resultRes.csv')
 
-#@measure_energy(handler=csv_handler, domains=[RaplPackageDomain(0), NvidiaGPUDomain(0), RaplDramDomain(0), RaplCoreDomain(0)])
+@measure_energy(handler=csv_handler, domains=[RaplPackageDomain(0), NvidiaGPUDomain(0), RaplDramDomain(0), RaplCoreDomain(0)])
 def Res(i,j):
     from keras.datasets import cifar10
     (X_train, Y_train), (X_test, Y_test) = cifar10.load_data()
@@ -200,10 +200,12 @@ def Res(i,j):
 
     Accuracy.append(ModelAccuracy)
 
-#for i in [0.2,0.4,0.6,0.8,1]:
-#    for j in [10,15,20,25]:
-#    	Res(i,j)
-Res(1,10)
+for i in [0.2,0.4,0.6,0.8,1]:
+    for j in [10,15,20,25]:
+    	Res(i,j)
+
+
+#Res(1,1)
 
 print(Accuracy)
 csv_handler.save_data()
