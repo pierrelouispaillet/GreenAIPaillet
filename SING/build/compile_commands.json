@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/greenai/Desktop/SING/build",
+  "command": "/usr/bin/gcc   -g -o CMakeFiles/Sing.dir/super1D.c.o -c /home/greenai/Desktop/SING/super1D.c",
+  "file": "/home/greenai/Desktop/SING/super1D.c",
+  "output": "CMakeFiles/Sing.dir/super1D.c.o"
+}
+]

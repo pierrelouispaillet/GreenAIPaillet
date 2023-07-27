@@ -1,0 +1,12 @@
+extern fftw_complex Cexp(double s);
+extern fftw_complex Prod(fftw_complex s1,fftw_complex s2);
+extern double Car(fftw_complex s);
+extern fftw_complex Pscal(fftw_complex s1,double s2);
+extern double Cmasse();
+extern double Ener();
+extern double Vpot(int ix,int iy,double om0);
+extern double Moment();
+double ImPcc(fftw_complex s1,fftw_complex s2);
+extern double Cm();
+extern double Diss();
+extern void fonc(); 

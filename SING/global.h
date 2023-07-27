@@ -1,0 +1,11 @@
+extern double drand48();
+extern double atof();
+extern comp1D psi,psik;
+extern real1D ks;
+extern real1D kx,xm;
+extern int nsauve,N,tmax,tprint,tmax,tdata,lsol,compt,tdiss,tdi;
+extern double dt,dx,heure,bruit,inv,amp,mu,nu,k0,tome;
+extern double Mtot,dvort,L0,omeg,Lz,g,vit,flux,dissip;
+extern real2D fstruct,fstruct2;
+extern fftw_plan coeff,coefb;
+extern rfftw_plan rcoeff,rcoefb;

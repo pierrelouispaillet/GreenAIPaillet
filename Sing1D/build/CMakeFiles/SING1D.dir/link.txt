@@ -1,0 +1,1 @@
+/usr/bin/gcc -g -rdynamic CMakeFiles/SING1D.dir/super1D.c.o -o SING1D 

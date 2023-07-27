@@ -8,13 +8,19 @@ from keras.utils import to_categorical
 from keras.models import Sequential
 from keras.layers import Dense, Activation, Dropout, Flatten, Conv2D, MaxPooling2D
 from tensorflow.keras.layers import BatchNormalization
-from pyJoules.energy_meter import measure_energy
-from pyJoules.handler.csv_handler import CSVHandler
+
 import keras.backend
 
+from pyJoules.energy_meter import measure_energy
+from pyJoules.handler.csv_handler import CSVHandler
 
 from pyJoules.device.rapl_device import RaplPackageDomain
 from pyJoules.device.nvidia_device import NvidiaGPUDomain
+from pyJoules.device.rapl_device import RaplDramDomain
+from pyJoules.device.rapl_device import RaplCoreDomain
+from pyJoules.device.rapl_device import RaplUncoreDomain
+from pyJoules.device import Device
+
 
 
 
@@ -34,9 +40,9 @@ start_time = time.time()
 
 Accuracy=[]
 
-csv_handler = CSVHandler('result.csv')
+csv_handler = CSVHandler('resultAlex.csv')
 
-#@measure_energy(handler=csv_handler, domains=[RaplPackageDomain(0), NvidiaGPUDomain(0)])
+@measure_energy(handler=csv_handler, domains=[RaplPackageDomain(0), NvidiaGPUDomain(0), RaplDramDomain(0), RaplCoreDomain(0)])
 def AlexNet(i,j):
 #Instantiation
 	AlexNet = Sequential()
@@ -161,11 +167,10 @@ def AlexNet(i,j):
     
 
 
-#for i in [0.2,0.4,0.6,0.8,1]:
-    #for j in [5,10,15,20]:
-    	#AlexNet(i,j)
+for i in [0.2,0.4,0.6,0.8,1]:
+    for j in [5,10,15,20]:
+    	AlexNet(i,j)
 
-AlexNet(1,10)
 
 #energyusage.evaluate(AlexNet, 1 , 10, pdf = True)
 

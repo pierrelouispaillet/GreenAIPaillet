@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 import keras
 from tensorflow.keras import datasets,models,layers
+import DeepSaki
+import pandas as pd
 
 from pyJoules.energy_meter import measure_energy
 from pyJoules.handler.csv_handler import CSVHandler
@@ -34,7 +36,7 @@ session = tf.compat.v1.Session(config=config)
 # Set the session as the default for TensorFlow
 tf.compat.v1.keras.backend.set_session(session)
 
-Accuracy=[]
+
  
 csv_handler = CSVHandler('resultRes.csv')
 
@@ -180,13 +182,21 @@ def Res(i,j):
     es = EarlyStopping(patience= 8, restore_best_weights=True, monitor="val_acc")
     #I did not use cross validation, so the validate performance is not accurate.
     STEPS = len(X_train) / 256
+    
+    
+
     history = model.fit(aug.flow(X_train,Y_train,batch_size = 256), steps_per_epoch=STEPS, batch_size = 256, epochs=j, validation_data=(X_train, Y_train),callbacks=[es])
-
-
 
     # list all data in history
     print(history.history.keys())
-    
+        
+    # convert the history.history dict to a pandas DataFrame:     
+    hist_df = pd.DataFrame(history.history) 
+
+    # or save to csv: 
+    hist_csv_file = 'history' + str(i) + '.csv' 
+    with open(hist_csv_file, mode='w') as f:
+        hist_df.to_csv(f)
 
     ## Evaluation
 
@@ -198,14 +208,34 @@ def Res(i,j):
     n_elements = X_train.shape[0]
     print(n_elements)
 
-    Accuracy.append(ModelAccuracy)
+    return history
+
+
+import matplotlib.pyplot as plt
+from matplotlib.ticker import MultipleLocator, FormatStrFormatter
 
 for i in [0.2,0.4,0.6,0.8,1]:
-    for j in [10,15,20,25]:
-    	Res(i,j)
+    for j in [500]:
+
+        history = Res(i,j)
+        plt.plot(history.history['accuracy'])
+        plt.plot(history.history['val_accuracy'])
+        plt.title('model accuracy')
+        plt.ylabel('accuracy')
+        plt.xlabel('epoch')
+        plt.legend(['train', 'validation'], loc='upper left')
+        plt.savefig( str(i) + '_' + str(j) + '.png' )
+        plt.clf()
 
 
-#Res(1,1)
 
-print(Accuracy)
+# summarize history for accuracy
+
+
+# print accuracy
+print('Model Accuracy is {}'.format(history.history['accuracy'][-1]))
+
+
+
+
 csv_handler.save_data()

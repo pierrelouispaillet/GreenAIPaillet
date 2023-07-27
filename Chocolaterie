@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net" modified="2023-06-06T12:28:18.624Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="dXv7reWwRgPVEVvhKsAj" version="21.3.4" type="device">
+  <diagram name="Page-1" id="7JxPAefGr_aL-RWKVK8h">
+    <mxGraphModel dx="693" dy="667" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ipvs3SX9oye0AKQuTS2G-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ipvs3SX9oye0AKQuTS2G-1" target="ipvs3SX9oye0AKQuTS2G-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ipvs3SX9oye0AKQuTS2G-1" value="Torréfaction" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ipvs3SX9oye0AKQuTS2G-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ipvs3SX9oye0AKQuTS2G-2" target="ipvs3SX9oye0AKQuTS2G-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ipvs3SX9oye0AKQuTS2G-2" value="Séparation de nibs des coques" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ipvs3SX9oye0AKQuTS2G-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ipvs3SX9oye0AKQuTS2G-3" target="ipvs3SX9oye0AKQuTS2G-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ipvs3SX9oye0AKQuTS2G-3" value="Broyage des grains" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ipvs3SX9oye0AKQuTS2G-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ipvs3SX9oye0AKQuTS2G-4" target="ipvs3SX9oye0AKQuTS2G-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ipvs3SX9oye0AKQuTS2G-4" value="Tamissage des crêmes à tartiner" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ipvs3SX9oye0AKQuTS2G-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ipvs3SX9oye0AKQuTS2G-5" target="ipvs3SX9oye0AKQuTS2G-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ipvs3SX9oye0AKQuTS2G-5" value="Second broyage" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ipvs3SX9oye0AKQuTS2G-6" value="Elimination des acides et réduction de l&#39;humidité" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ipvs3SX9oye0AKQuTS2G-7" value="20Kw" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ipvs3SX9oye0AKQuTS2G-8" value="2Kw" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ipvs3SX9oye0AKQuTS2G-9" value="4Kw" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ipvs3SX9oye0AKQuTS2G-10" value="0.18Kw" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ipvs3SX9oye0AKQuTS2G-11" value="4kw" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ipvs3SX9oye0AKQuTS2G-12" value="320 lt/min d&#39;air comprimé" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="555" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ipvs3SX9oye0AKQuTS2G-13" value="3,5 kw" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ipvs3SX9oye0AKQuTS2G-14" value="6Kg/18min" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ipvs3SX9oye0AKQuTS2G-15" value="50kg/h" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ipvs3SX9oye0AKQuTS2G-16" value="35-40kg/h" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ipvs3SX9oye0AKQuTS2G-17" value="50-60kg/h" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ipvs3SX9oye0AKQuTS2G-18" value="15-20Kg/h" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,61 @@
+AI for Green literature review of [26]																									
+																									
+																									
+Title	Year	DL or else	GHG impact of method	Ref in [26]	Category																				
+Hybrid cluster-regression approach to model bikeshare station usage	2018	ML (unsup, sup)	0,5	251	2.4 low carbon																				
+Proactive vehicle routing with inferred demand to solve the bikesharing rebalancing problem	2014	ML (sup), LP	0,5	252	2.4 low carbon		"""Methodological framework"""																		
+Spatiotemporal Traffic Forecasting: Review and Proposed Directions	2016	ML, STAR	0	175	2.1 Modeling demand		GHG impact of method																		
+Spatial Transferability of Neural Network Models in Travel Demand Modeling	2018	DL	0	176	2.1 Modeling demand		0: no reference																		
+Taxi Time Prediction at Charlotte Airport Using Fast-Time Simulation and Machine Learning Techniques	2015	ML (sup)	0	183	2.1 Modeling demand		0,5: a few words about environmental applications																		JL: yes !
+Short-Term Origin-Destination Based Metro Flow Prediction with Probabilistic Model Selection Approach	2018	ML (sup)	0	177	2.1 Modeling demand		1: reference without measurement or indirect estimation																		
+Real time transit demand prediction capturing station interactions and impact of special events	2018	ML, others	0	178	2.1 Modeling demand		2: energy quantification but not for AI (e.g. energy gain by using AI model without calculation of enrgy need to train the model)																		
+Spatiotemporal variation in travel regularity through transit user profiling	2018	ML (unsup)	0	179	2.1 Modeling demand		3: energy quantification including AI for use phase 																		
+A visual segmentation method for temporal smart card data	2017	ML (unsup)	0	180	2.1 Modeling demand		4: full LCA																		
+Decarbonizing intraregional freight systems with a focus on modal shift	2018	not the scope	2	159	2.1 Freight																				
+Machine learning for combinatorial optimization: A methodological tour d’horizon	2021	ML, DL	0	194	2.1 Freight																				
+ARTIFICIAL INTELLIGENCE IN LOGISTICS	2018	ML, DL	0	195	2.1 Freight																				
+Very-Large-Scale Generalized Combinatorial Multi-Attribute Auctions: Lessons from Conducting $60 Billion of Sourcing	2013	ML	0,5	196	2.1 Freight		DL: deep learning																		
+Managing Electric Vehicles in the Smart Grid Using Artificial Intelligence: A Survey	2015	ML	2	220	2.3 Elec Vehi		ML: machine learning (supervise/unsupervised)																		
+Support vector based battery state of charge estimator	2005	ML	1	221	2.3 Elec Vehi		LP: linear programming																		
+ANN-based algorithm for estimation and compensation of lateral misalignment in dynamic wireless power transfer systems for EV charging	2017	DL	1	222	2.3 Elec Vehi		STAR: spatio-temporal auto-regressive 																		
+Electric Vehicle Load Disaggregation Based on Limited Activation Matching Pursuits	2019	ML	1	223	2.3 Elec Vehi																				
+Data-driven optimized layout of battery electric vehicle charging infrastructure	2018	other	1	224	2.3 Elec Vehi																				
+The role of electric vehicles in smart grids	2012	not the scope	1	225	2.3 Elec Vehi																				
+Towards Optimal Power Management of Hybrid Electric Vehicles in Real-Time: A Review on Methods, Challenges, and State-Of-The-Art Solutions	2018	ML and others	1	205	2.3 Elec Vehi																				
+Reinforcement learning for demand response: A review of algorithms and modeling techniques	2019	ML, DL	2	226	2.3 Elec Vehi																				
+Is there a near-term market for vehicle-to-grid electric vehicles?	2015	not the scope	1	227	2.3 Elec Vehi																				
+Review of the Remaining Useful Life Prognostics of Vehicle Lithium-Ion Batteries Using Data-Driven Methodologies	2016	ML	1	228	2.3 Elec Vehi																				
+Critical review of the methods for monitoring of lithium-ion batteries in electric and hybrid vehicles	2014	ML	1	229	2.3 Elec Vehi																				
+Remaining useful life estimation – A review on the statistical data driven approaches	2011	ML	0	230	2.3 Elec Vehi																				
+Data-driven prediction of battery cycle life before capacity degradation	2019	ML	1	231	2.3 Elec Vehi																				
+A New Method for Determining the Concentration of Electrolyte Components in Lithium-Ion Cells, Using Fourier Transform Infrared Spectroscopy and Machine Learning	2018	ML	0	232	2.3 Elec Vehi																				
+Advanced Machine Learning Approach for Lithium-Ion Battery State Estimation in Electric Vehicles	2016	ML, DL	0,5	233	2.3 Elec Vehi																				
+Data-Driven Studies of Li-Ion-Battery Materials	2019	ML	1	234	2.3 Elec Vehi																				
+Analysis of Thousands of Electrochemical Impedance Spectra of Lithium-Ion Cells through a Machine Learning Inverse Model	2019	DL	0	235	2.3 Elec Vehi																				
+Deep belief network based ensemble approach for cooling load forecasting of air-conditioning system	2018	DL	0	286	3.1 Smart buildings																				
+Deep neural networks: A promising tool for fault characteristic mining and intelligent diagnosis of rotating machinery with massive data	2016	DL	0	290	3.1 Smart buildings																				
+Fault detection and diagnosis of chillers using Bayesian network merged distance rejection and multi-source non-sensor information	2017	ML (sup)	0	289	3.1 Smart buildings																				
+Foresee: A user-centric home energy management system for energy efficiency and demand response	2017		1	299	3.1 Smart buildings																				
+Gigawatt-hour scale savings on a budget of zero: Deep reinforcement learning based optimal control of hot water systems	2018	DL	2	287	3.1 Smart buildings																				
+Hardware Design of Smart Home Energy Management System With Dynamic Price Response	2013	ML	2	298	3.1 Smart buildings																				
+Intelligent Edge Computing for IoT-Based Energy Management in Smart Cities	2019	DL	2	300	3.1 Smart buildings																				
+Intelligent Infrastructure for Energy Efficiency	2010	ML	0,5	284	3.1 Smart buildings																				
+Internet of Things: Energy boon or bane?	2019		1	301	3.1 Smart buildings																				
+Keeping the Resident in the Loop: Adapting the Smart Home to the User	2009	ML	0	292	3.1 Smart buildings																				
+Modeling techniques used in building HVAC control systems: A review	2018	ML, DL and others	0	285	3.1 Smart buildings																				
+Occupancy schedules learning process through a data mining framework	2015	ML	0	293	3.1 Smart buildings																				
+Occupant behavior and schedule modeling for building energy simulation through office appliance power consumption data mining	2014	ML	0	294	3.1 Smart buildings																				
+Towards occupant activity driven smart buildings via WiFi-enabled IoT devices and deep learning	2018	DL	0	295	3.1 Smart buildings																				
+Unsupervised WiFi-Enabled IoT Device-User Association for Personalized Location-Based Service	2019	ML	0	296	3.1 Smart buildings																				
+A decision support approach for condition-based maintenance of rails based on big data analysis	2018	DL	0	249	2.4 low carbon																				
+Track geometry degradation and maintenance modelling: A review	2018	ML	1	250	2.4 low carbon																				
+Incentivizing users for balancing bike sharing systems	2015	DL	0,5	253	2.4 low carbon																				
+Bike share travel time modeling: San Francisco bay area case study.	2017	DL	0,5	254	2.4 low carbon																				
+Governing micro-mobility: A nationwide assessment of electric scooter regulations	2019	not the scope	0,5	255	2.4 low carbon																				
+Public opinion on dockless bike sharing: A machine learning approach		ML	0,5	256	2.4 low carbon																				
+The race to code the curb	2019	not the scope	0	257	2.4 low carbon																				
+Urban bus arrival time prediction: A review of computational models	2013	ML, DL	1	258	2.4 low carbon																				
+Prediction intervals to account for uncertainties in neural network predictions: Methodology and application in bus travel time prediction	2011	DL	1	259	2.4 low carbon																				
+Prediction of arrival times of freight traffic on US railroads using support vector regression.	2018	ML	1	260	2.4 low carbon																				
+A two-stage forecasting approach for short-term intermodal freight prediction	2019	DL	1	261	2.4 low carbon																				
+An overload behavior detection system for engineering transport vehicles based on deep learning	2018	DL	0	262	2.4 low carbon																				
