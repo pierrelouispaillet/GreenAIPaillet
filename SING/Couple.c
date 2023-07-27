@@ -70,7 +70,7 @@ XImage *image;
 char *image_data;
 Widget toplevel;
 
-int main(argc,argv)
+main(argc,argv)
 int argc;
 char **argv;
 {

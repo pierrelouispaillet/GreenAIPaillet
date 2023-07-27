@@ -1,0 +1,270 @@
+<mxfile host="app.diagrams.net" modified="2023-06-27T13:52:47.815Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="NiwgvobHqaRiVd4qVWRI" version="21.5.0" type="device">
+  <diagram name="Page-1" id="YxqplXaHnLE8dlecAqZT">
+    <mxGraphModel dx="2675" dy="856" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="h83WhFstrwipEiN3OEP5-1" value="Production of Synthethic" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-520" y="371" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-2" value="Cocoa Cultivation" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-330" y="371" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.009;entryY=0.458;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="h83WhFstrwipEiN3OEP5-3" target="h83WhFstrwipEiN3OEP5-40" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="620" y="880" />
+              <mxPoint x="620" y="512" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-3" value="Production of Ingredients" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="860" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="h83WhFstrwipEiN3OEP5-4" target="h83WhFstrwipEiN3OEP5-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-4" value="Packaging" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="h83WhFstrwipEiN3OEP5-5" target="h83WhFstrwipEiN3OEP5-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-5" value="Cocoa Bean processing" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="350" width="460" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-6" value="Chocolate manufacturing" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="650" y="350" width="315" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="h83WhFstrwipEiN3OEP5-8" target="h83WhFstrwipEiN3OEP5-56" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-8" value="Quality Control" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="h83WhFstrwipEiN3OEP5-9" target="h83WhFstrwipEiN3OEP5-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-9" value="&lt;ul&gt;&lt;li&gt;Land use&lt;/li&gt;&lt;li&gt;Fertilizer application&lt;/li&gt;&lt;li&gt;Pesticide application&lt;/li&gt;&lt;li&gt;Insecticide application&lt;/li&gt;&lt;li&gt;Fuel use&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="-330" y="456" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="h83WhFstrwipEiN3OEP5-10" target="h83WhFstrwipEiN3OEP5-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-10" value="&lt;ul&gt;&lt;li&gt;Fertilizer&lt;/li&gt;&lt;li&gt;Insceticides&lt;/li&gt;&lt;li&gt;Pesticides&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="-520" y="456" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-13" value="&lt;ul&gt;&lt;li&gt;Transport to retail centres&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1430" y="530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-14" value="&lt;ul&gt;&lt;li&gt;Alluminium Foild&amp;nbsp;&lt;/li&gt;&lt;li&gt;Paper Wraper&lt;/li&gt;&lt;li&gt;Carboard&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="740" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-15" value="&lt;ul&gt;&lt;li&gt;Sugar&amp;nbsp;&lt;/li&gt;&lt;li&gt;Milk&lt;/li&gt;&lt;li&gt;&amp;nbsp;Alkaline&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="360" y="910" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-16" value="&lt;div&gt;Land use: 2.88 × 10−6 ha&lt;/div&gt;&lt;div&gt;Planting seeds: 4.31 × 10−3 kg&lt;/div&gt;&lt;div&gt;Water: 1.15 × 101 L&lt;/div&gt;&lt;div&gt;Petrol (for spraying): 2.33 × 10−2 kg&lt;/div&gt;&lt;div&gt;Fertilizer (N:P:K 0:22:18 + 9CaO + 7S+ 6MgO): 3.57 × 10−1 kg&lt;/div&gt;&lt;div&gt;Insecticide: 1.95 × 10−2 kg&lt;/div&gt;&lt;div&gt;Fungicide: 1.81 × 10−2 kg&lt;/div&gt;&lt;div&gt;Cocoa pulp (beans sweating): 7.95 × 10−1 kg&lt;/div&gt;&lt;div&gt;Cocoa pod husk: 1.94 × 101 kg&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-330" y="576" width="250" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="h83WhFstrwipEiN3OEP5-17" target="h83WhFstrwipEiN3OEP5-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-17" value="&lt;div&gt;Cocoa beans: 2.44 kg&lt;/div&gt;&lt;div&gt;Electricity: 4.12 × 10−1 kWh&lt;/div&gt;&lt;div&gt;LPG: 2.92 × 10−1 kg&lt;/div&gt;&lt;div&gt;Dutching-Alkaline: 6.98 × 10−2 L&lt;/div&gt;&lt;div&gt;Chemicals (cleaning agents): 1.66 × 10−4 L&lt;/div&gt;&lt;div&gt;Oil and grease: 1.83 × 10−5 kg&lt;/div&gt;&lt;div&gt;Water: 1.19 kg&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="640" width="460" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-18" value="&lt;div&gt;Cocoa liquor: 1.24 kg&lt;/div&gt;&lt;div&gt;Cocoa butter: 0.63 kg&lt;/div&gt;&lt;div&gt;Cocoa powder: 0.17 kg&lt;/div&gt;&lt;div&gt;Cocoa cake: 0.84 kg&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="230" width="460" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-19" value="&lt;div&gt;Extra Dark Chocolate (EDC):&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Cocoa liquor: 4.05 × 10−1 kg&lt;/div&gt;&lt;div&gt;Cocoa butter: 1.45 × 10−1 kg&lt;/div&gt;&lt;div&gt;Cocoa powder: 1.70 × 10−1 kg&lt;/div&gt;&lt;div&gt;Vanillin: 4.26 × 10−4 kg&lt;/div&gt;&lt;div&gt;Sugar: 2.75 × 10−1 kg&lt;/div&gt;&lt;div&gt;Electricity: 2.77 × 101 kWh&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="650" y="640" width="145" height="225" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-20" value="&lt;div&gt;Dark Chocolate (DC):&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Cocoa liquor: 4.75 × 10−1 kg&lt;/div&gt;&lt;div&gt;Cocoa butter: 8.50 × 10−1 kg&lt;/div&gt;&lt;div&gt;Vanillin: 4.26 × 10−4 kg&lt;/div&gt;&lt;div&gt;Sugar: 4.35 × 10−1 kg&lt;/div&gt;&lt;div&gt;Electricity: 2.77 × 101 kWh&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="815" y="640" width="150" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-21" value="Milk Chocolate (MC):&#xa;&#xa;&#xa;Cocoa liquor: 1.80 × 10−1 kg&#xa;Cocoa butter: 2.00 × 10−1 kg&#xa;Vanillin: 4.26 × 10−4 kg&#xa;Sugar: 3.00 × 10−1 kg&#xa;Milk Powder: 3.00 × 10−1 kg&#xa;Electricity: 2.77 × 101 kWh" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="650" y="880" width="145" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-22" value="&lt;div&gt;Flavoured Milk Chocolate (FMC):&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Cocoa liquor: 1.80 × 10−1 kg&lt;/div&gt;&lt;div&gt;Cocoa butter: 2.00 × 10−1 kg&lt;/div&gt;&lt;div&gt;Vanillin: 4.26 × 10−4 kg&lt;/div&gt;&lt;div&gt;Sugar: 3.00 × 10−1 kg&lt;/div&gt;&lt;div&gt;Milk Powder: 3.00 × 10−1 kg&lt;/div&gt;&lt;div&gt;Flavour: 1.00 × 10−3 kg&lt;/div&gt;&lt;div&gt;Electricity: 2.77 × 101 kWh&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="815" y="880" width="150" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-23" value="&lt;div&gt;Aluminium foil (primary): 1.10 × 10−2 kg&lt;/div&gt;&lt;div&gt;Paper wrapper: 1.10 × 10−2 kg&lt;/div&gt;&lt;div&gt;Carton boxes: 1.10 × 10−2 kg&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="820" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-24" value="CO2 emissions from the use of petrol for spraying: 2.33 × 10−2 kg" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-330" y="286" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.011;entryY=0.432;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="h83WhFstrwipEiN3OEP5-25" target="h83WhFstrwipEiN3OEP5-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-25" value="Transportation of cocoa Beans" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-40" y="476" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-26" value="CO2 emissions from fuel consumption: 3.23 × 10−6 L" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-40" y="396" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-27" value="&lt;div&gt;CO2 emissions from the use of electricity: 4.12 × 10−1 kWh&lt;/div&gt;&lt;div&gt;CO2 emissions from the use of LPG: 2.92 × 10−1 kg&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="160" width="460" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.011;entryY=0.476;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="h83WhFstrwipEiN3OEP5-28" target="h83WhFstrwipEiN3OEP5-40" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-28" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="420" width="460" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="h83WhFstrwipEiN3OEP5-29" target="h83WhFstrwipEiN3OEP5-30" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-29" value="Cleaning" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="140" y="435" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="h83WhFstrwipEiN3OEP5-30" target="h83WhFstrwipEiN3OEP5-32" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-30" value="Drying" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="435" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="h83WhFstrwipEiN3OEP5-32" target="h83WhFstrwipEiN3OEP5-33" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="510" />
+              <mxPoint x="200" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-32" value="Roasting" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="430" y="435" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="h83WhFstrwipEiN3OEP5-33" target="h83WhFstrwipEiN3OEP5-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-33" value="Milling" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="140" y="530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.007;entryY=0.419;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="h83WhFstrwipEiN3OEP5-34" target="h83WhFstrwipEiN3OEP5-28" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="570" />
+              <mxPoint x="540" y="504" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-34" value="Pressing" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="290" y="530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="h83WhFstrwipEiN3OEP5-40" target="h83WhFstrwipEiN3OEP5-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-40" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="650" y="420" width="315" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="h83WhFstrwipEiN3OEP5-41" target="h83WhFstrwipEiN3OEP5-42" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-41" value="Mixing" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="675" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="h83WhFstrwipEiN3OEP5-42" target="h83WhFstrwipEiN3OEP5-44" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-42" value="Conching" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="825" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="h83WhFstrwipEiN3OEP5-44" target="h83WhFstrwipEiN3OEP5-40" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="925" y="570" />
+              <mxPoint x="925" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-44" value="Tempering" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="745" y="530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-56" value="Distribution" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1430" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="h83WhFstrwipEiN3OEP5-59" target="h83WhFstrwipEiN3OEP5-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-59" value="Production of packaging" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h83WhFstrwipEiN3OEP5-62" value="&lt;div&gt;CO2 emissions from the use of electricity:&amp;nbsp;&lt;/div&gt;2.77 × 10^1 kWh" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="650" y="286" width="315" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="a5lZdkCNDha5Ycxr7Nwv-1" value="25Kg/h" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="675" y="490" width="100" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="a5lZdkCNDha5Ycxr7Nwv-2" value="60Kg/h" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="825" y="490" width="100" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="a5lZdkCNDha5Ycxr7Nwv-3" value="40Kg/h" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="140" y="576" width="100" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="a5lZdkCNDha5Ycxr7Nwv-5" value="40Kg/h" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="430" y="490" width="80" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="a5lZdkCNDha5Ycxr7Nwv-6" value="18kg/h" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="506" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="a5lZdkCNDha5Ycxr7Nwv-7" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#F0210A;" parent="1" vertex="1">
+          <mxGeometry x="930" y="590" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a5lZdkCNDha5Ycxr7Nwv-8" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#F0210A;" parent="1" vertex="1">
+          <mxGeometry x="500" y="580" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a5lZdkCNDha5Ycxr7Nwv-9" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#F0210A;" parent="1" vertex="1">
+          <mxGeometry x="1120" y="514" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a5lZdkCNDha5Ycxr7Nwv-10" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#02F00A;" parent="1" vertex="1">
+          <mxGeometry x="540" y="286" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a5lZdkCNDha5Ycxr7Nwv-11" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#02F00A;" parent="1" vertex="1">
+          <mxGeometry x="550" y="740" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a5lZdkCNDha5Ycxr7Nwv-12" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#02F00A;" parent="1" vertex="1">
+          <mxGeometry x="-110" y="750" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a5lZdkCNDha5Ycxr7Nwv-13" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#02F00A;" parent="1" vertex="1">
+          <mxGeometry x="-110" y="330" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a5lZdkCNDha5Ycxr7Nwv-14" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#02F00A;" parent="1" vertex="1">
+          <mxGeometry x="540" y="190" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a5lZdkCNDha5Ycxr7Nwv-16" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#02F00A;" parent="1" vertex="1">
+          <mxGeometry x="660" y="306" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a5lZdkCNDha5Ycxr7Nwv-20" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#02F00A;" parent="1" vertex="1">
+          <mxGeometry x="770" y="841" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a5lZdkCNDha5Ycxr7Nwv-22" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#02F00A;" parent="1" vertex="1">
+          <mxGeometry x="937" y="832" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a5lZdkCNDha5Ycxr7Nwv-23" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#02F00A;" parent="1" vertex="1">
+          <mxGeometry x="768" y="1093" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a5lZdkCNDha5Ycxr7Nwv-24" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#02F00A;" parent="1" vertex="1">
+          <mxGeometry x="930" y="1090" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a5lZdkCNDha5Ycxr7Nwv-25" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#02F00A;" parent="1" vertex="1">
+          <mxGeometry x="1120" y="920" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a5lZdkCNDha5Ycxr7Nwv-26" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#02F00A;" parent="1" vertex="1">
+          <mxGeometry x="60" y="431" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a5lZdkCNDha5Ycxr7Nwv-27" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#02F00A;" parent="1" vertex="1">
+          <mxGeometry x="-90" y="890" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a5lZdkCNDha5Ycxr7Nwv-28" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#F0210A;" parent="1" vertex="1">
+          <mxGeometry x="-90" y="845" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a5lZdkCNDha5Ycxr7Nwv-30" value="Selmi-group.fr" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-60" y="845" width="200" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="a5lZdkCNDha5Ycxr7Nwv-31" value="Environmental Performance of Chocolate Produced in Ghana Using Life cycle Assesment" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-60" y="880" width="200" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

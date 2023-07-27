@@ -93,7 +93,7 @@ fig, axes = plt.subplots(nrows=2, ncols=3, figsize=(18, 12), subplot_kw={'projec
 for idx, (ax, data, title) in enumerate(zip(axes[0], data_arraysE, titles)):
     ax.plot_wireframe(X, Y, data)
     ax.set_xlabel('Nombre d epochs')
-    ax.set_ylabel('Pourcentage de la base de donnees')
+    ax.set_ylabel('Pourcentage de la base de donnees')  
     ax.set_zlabel('Z')
     ax.set_title(title)
 

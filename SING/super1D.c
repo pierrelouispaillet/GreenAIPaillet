@@ -16,9 +16,6 @@
 #include<X11/Xaw/Dialog.h>
 #include<X11/Xaw/Simple.h>
 
-#include <stdint.h>
-
-
 #define NPIXELS 120
 #define N 1024
 #define NbP 5
@@ -29,18 +26,13 @@ int num_par = 7;
 extern double drand48();
 extern double atof();
 
-XtCallbackProc Scrolled();
-void Jumped1();
-void Jumped();
-void Graf();
-void Quit();
+XtCallbackProc Scrolled(), Jumped(),Jumped1(), Quit();
 void On_Off(),Hora();
 void DialogDone(),PopupDialog();
 void CrearPrametros();
 void CrearControl();
 static void Intre(),Intk();
 void init();
-void printspec();
 
 void Start_Dess();
 void Stop();
@@ -51,7 +43,7 @@ void Fase();
 void Hristo();
 void Paleta_de_color();
 
-Boolean Dessine();
+XtWorkProc Dessine();
 XtWorkProcId DessineId;
 
 double posicion[20],parametro[20],xmax[20],xmin[20];
@@ -79,7 +71,7 @@ XImage *image;
 char *image_data;
 Widget toplevel;
 
-int main(argc,argv)
+main(argc,argv)
 int argc;
 char **argv;
 {
@@ -89,7 +81,7 @@ char **argv;
 	Widget simple,simple_pal,list_on_off,box_list;
 	Arg args[10];
 	int i;
-	char nom_wid[20];
+	String nom_wid[20];
 
 
 	static String items[]= {
@@ -163,9 +155,8 @@ args, 2);
 		simple_pal = XtCreateManagedWidget(nom_wid, simpleWidgetClass,fenetre_box,
 									args, 2);
 
-		XtAddCallback(list, XtNcallback, Activate, (XtPointer)(intptr_t)i);
-		XtAddCallback(list_on_off, XtNcallback, On_Off, (XtPointer)(intptr_t)i);
-
+		XtAddCallback(list, XtNcallback, Activate, (XtPointer)i);
+		XtAddCallback(list_on_off, XtNcallback, On_Off, (XtPointer)i);
 	}
 
 
@@ -211,7 +202,7 @@ Activate(w,client_data, call_data)
 Widget w;
 XtPointer client_data, call_data;
 {
-	int i = (int)(intptr_t)client_data;
+	int i = (int)client_data;
 	XawListReturnStruct *item = (XawListReturnStruct*)call_data;
 	option[i] = item->list_index;
 }
@@ -221,7 +212,7 @@ On_Off(w,client_data, call_data)
 Widget w;
 XtPointer client_data, call_data;
 {
-	int i = (int)(intptr_t)client_data; 
+	int i = (int)client_data;
 	XawListReturnStruct *item = (XawListReturnStruct*)call_data;
 	on_off[i] = item->list_index;
 }
@@ -314,7 +305,7 @@ Widget widget;
 
 
 	for(i=0;i<num_fenetre;i++)
-		XtAddCallback(start, XtNcallback, Paleta_de_color, (XtPointer)(intptr_t)i);
+		XtAddCallback(start, XtNcallback, Paleta_de_color, (XtPointer)i);
 
 	XtAddCallback(start, XtNcallback, Start_Dess, NULL);
 	XtAddCallback(stop, XtNcallback, Stop,NULL);
@@ -324,11 +315,16 @@ Widget widget;
 }
 
 
-void Quit(Widget w, XtPointer client_data, XtPointer call_data) {
-    XtDestroyApplicationContext(XtWidgetToApplicationContext(w));
-    exit(0);
-}
+XtCallbackProc
+Quit(w, call_data, client_data)
+Widget w;
+XtPointer call_data, client_data;
+{
+	void exit();
 
+	XtDestroyApplicationContext(XtWidgetToApplicationContext(w));
+	exit(0);
+}
 
 
 
@@ -353,49 +349,51 @@ XtPointer client_data, call_data;
 	XtRemoveWorkProc(DessineId);
 }
 
-Boolean Dessine(XtPointer client_data) {
-    register int Nt, ii;
-    register double min, segs;
-    Widget lab_iter, lab_time, box_time, control, control_box;
-    char string[20];
-    Arg args[5];
+XtWorkProc Dessine(client_data)
+XtPointer client_data;
+{
 
-    control = XtNameToWidget(toplevel, "control");
-    control_box = XtNameToWidget(control, "control_box");
-    lab_iter = XtNameToWidget(control_box, "lab_iter");
+	register int Nt,ii;
+	register double min,segs;
+	Widget lab_iter,lab_time,box_time,control,control_box;
+	String string[20];
+	Arg args[5];
 
-    switch (odile) {
-        case 0:
-            break;
-        case 1:
-            for (ii = 0; ii < 100; ii++) {
-                Intre(0.5 * dt);
-                Intk(dt);
-                Intre(0.5 * dt);
-                tome += dt;
-            }
-            compt++;
-            if (compt % 100 == 0)
-                printspec(compt / 100);
-            /*
-            if(tome>40)
-                if(tome<80){
-                    for(ii=0;ii<N;ii++)
-                    printf("%g ",Car(psi[ii]));
-                    printf("\n");
-                    }
-                    */
-            sprintf(string, "%f", tome);
-            XtSetArg(args[0], XtNlabel, string);
-            XtSetValues(lab_iter, args, 1);
-            if (on_off[0] == 1)
-                Graf();
-            break;
-    }
+	control = XtNameToWidget(toplevel,"control");
+	control_box = XtNameToWidget(control,"control_box");
+	lab_iter = XtNameToWidget(control_box ,"lab_iter");
+	switch (odile){
+		case 0:
 
-    return (False);
+		break;
+		case 1:
+		for(ii=0;ii<100;ii++){
+		    Intre(0.5*dt);
+			Intk(dt);
+		    Intre(0.5*dt);
+			tome+=dt;
+		}
+		compt++;
+		if(compt%100==0)
+			printspec(compt/100);
+		/*
+		if(tome>40)
+			if(tome<80){
+				for(ii=0;ii<N;ii++)
+				printf("%g ",Car(psi[ii]));
+				printf("\n");
+				}
+				*/
+		    sprintf(string,"%f",tome);
+		    XtSetArg(args[0],XtNlabel,string);
+		    XtSetValues(lab_iter,args,1);
+		    if(on_off[0]==1)
+			Graf();
+		break;
+	}
+
+	return(False);
 }
-
 
 
 void
@@ -404,13 +402,13 @@ Widget w;
 XtPointer client_data,call_data;
 {
 
-	char nom_wid[20];
+	String nom_wid[20];
 	Widget simple,central_box,fenetre_box;
 	Display *display;
 	Window window;
 	int i;
 
-	int num_win = (int)(intptr_t)client_data;
+	int num_win = (int)client_data;
 
 	central_box = XtNameToWidget(toplevel, "central_box");
 	sprintf(nom_wid,"fenetre_box%d",num_win);
@@ -445,7 +443,7 @@ Widget box_par;
 	Widget dialogDone;
 	Arg args[10];
 	Cardinal num_args;
-	char numero[10],nom_wid[10];
+	String numero[10],nom_wid[10];
 	float aux,p,xup,xlo;
 	int cont;
 	char nombre[10];
@@ -469,11 +467,11 @@ Widget box_par;
 		XtSetArg(args[num_args], XtNwidth, NPIXELS); num_args++;
 		XtSetArg(args[num_args], XtNheight, 8); num_args++;
 
-		//sprintf(nom_wid,"scrollbar%d",cont);
+		sprintf(nom_wid,"scrollbar%d",cont);
 		scrollbar = XtCreateManagedWidget(nom_wid,
 		scrollbarWidgetClass, box, args, num_args);
 
-		//sprintf(nom_wid,"scrollbar1%d",cont);
+		sprintf(nom_wid,"scrollbar1%d",cont);
 		scrollbar1 = XtCreateManagedWidget(nom_wid,
 							scrollbarWidgetClass, box, args, num_args);
 
@@ -486,8 +484,8 @@ Widget box_par;
 		label = XtCreateManagedWidget(nom_wid,
 							labelWidgetClass,box,args,num_args);
 
-		XtAddCallback(scrollbar, XtNjumpProc, Jumped, (XtPointer)(intptr_t)cont);
-		XtAddCallback(scrollbar1, XtNjumpProc, Jumped1, (XtPointer)(intptr_t)cont);
+		XtAddCallback(scrollbar, XtNjumpProc, Jumped, (XtPointer)cont);
+		XtAddCallback(scrollbar1, XtNjumpProc, Jumped1, (XtPointer)cont);
 
 
 		XtSetArg(args[0], XtNlabel, nombre);
@@ -508,62 +506,68 @@ Widget box_par;
 		dialog1 = XtCreateManagedWidget(nom_wid,dialogWidgetClass,box1,NULL,ZERO);
 
 		XtSetArg(args[0],XtNlabel,"YA");
-		//sprintf(nom_wid,"DialogDone%d",cont);
+		sprintf(nom_wid,"DialogDone%d",cont);
 		dialogDone = XtCreateManagedWidget(nom_wid,
 		commandWidgetClass,box1,args,1);
 
-		XtAddCallback(command, XtNcallback, PopupDialog, (XtPointer)(intptr_t)cont);
-		XtAddCallback(dialogDone, XtNcallback, DialogDone, (XtPointer)(intptr_t)cont);
+		XtAddCallback(command, XtNcallback, PopupDialog, (XtPointer)cont);
+		XtAddCallback(dialogDone, XtNcallback, DialogDone, (XtPointer)cont);
 
 	}
 
 }
 
-void Jumped(Widget w, XtPointer client_data, XtPointer call_data) {
-    float top;
-    Arg args[3];
-    char numero[10], nom_wid[10];
-    Widget label;
-    int cont;
+XtCallbackProc
+Jumped(w,client_data, call_data)
+Widget w;
+XtPointer client_data, call_data;
+{
+	float top;
+	Arg args[3];
+	String numero[10],nom_wid[10];
+	Widget label;
+	int cont;
 
-    cont = (intptr_t)client_data;
-    snprintf(nom_wid, sizeof(nom_wid), "label%d", cont);
-    label = XtNameToWidget(XtParent(w), nom_wid);
+	cont = (int)client_data;
+	sprintf(nom_wid,"label%d",cont);
+	label = XtNameToWidget( XtParent(w),nom_wid);
 
-    top = *((float *)call_data);
+	top = *((float *)call_data);
 
-    posicion[cont] = xmax[cont] * top + (1 - top) * xmin[cont];
-    parametro[cont] = posicion[cont];
+	posicion[cont] = xmax[cont] * top + (1-top)* xmin[cont];
+	parametro[cont] = posicion[cont];
 
-    snprintf(numero, sizeof(numero), "%6.3f", parametro[cont]);
-    XtSetArg(args[0], XtNlabel, numero);
+	sprintf(numero,"%6.3f",parametro[cont]);
+	XtSetArg(args[0],XtNlabel,numero);
 
-    XtSetValues(label, args, 1);
+	XtSetValues(label,args,1);
 }
 
+XtCallbackProc
+Jumped1(w,client_data, call_data)
+Widget w;
+XtPointer client_data, call_data;
+{
+	float top;
+	Arg args[3];
+	String numero[10],nom_wid[10];
+	Widget label;
+	int cont;
 
-void Jumped1(Widget w, XtPointer client_data, XtPointer call_data) {
-    float top;
-    Arg args[3];
-    char numero[10], nom_wid[10];
-    Widget label;
-    int cont;
+	cont = (int)client_data;
+	sprintf(nom_wid,"label%d",cont);
+	label = XtNameToWidget( XtParent(w),nom_wid);
 
-    cont = (intptr_t)client_data;
-    snprintf(nom_wid, sizeof(nom_wid), "label%d", cont);
-    label = XtNameToWidget(XtParent(w), nom_wid);
+	top = *((float *)call_data);
 
-    top = *((float *)call_data);
+	parametro[cont] =( posicion[cont] + (xmax[cont]-xmin[cont] )/50.0 )* top +
+					(1-top)*(posicion[cont]- (xmax[cont]-xmin[cont] )/50.0 );
 
-    parametro[cont] = (posicion[cont] + (xmax[cont] - xmin[cont]) / 50.0) * top +
-                      (1 - top) * (posicion[cont] - (xmax[cont] - xmin[cont]) / 50.0);
+	sprintf(numero,"%6.3f",parametro[cont]);
+	XtSetArg(args[0],XtNlabel,numero);
 
-    snprintf(numero, sizeof(numero), "%6.3f", parametro[cont]);
-    XtSetArg(args[0], XtNlabel, numero);
-
-    XtSetValues(label, args, 1);
+	XtSetValues(label,args,1);
 }
-
 
 void
 PopupDialog(w,client_data,call_data)
@@ -574,10 +578,10 @@ XtPointer client_data,call_data;
 	Position x,y;
 	Dimension width,height;
 	Arg args[2];
-	char temporal[10],nom_wid[10];
+	static String temporal[10],nom_wid[10];
 	int cont;
 
-	cont = (int)(intptr_t) client_data;
+	cont = (int) client_data;
 	command =w;
 	box =XtParent(command);
 
@@ -624,11 +628,11 @@ Widget w;
 XtPointer client_data,call_data;
 {
 	Widget command, pshell,dialog,dialog1,box1,box;
-	char nom_wid[10];
+	String nom_wid[10];
 	int cont;
 
 
-	cont = (int)(intptr_t)client_data;
+	cont = (int)client_data;
 
 	box1 = XtParent(w);
 	pshell = XtParent(box1);
@@ -690,7 +694,7 @@ int ii;
 
 void Graf()
 {
-        char nom_wid[20];
+        String nom_wid[20];
         Widget simple,central_box,fenetre_box;
         Display *display;
         Window window;

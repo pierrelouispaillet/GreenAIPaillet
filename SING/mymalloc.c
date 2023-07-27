@@ -11,11 +11,13 @@ void **mymalloc(int size, int n1, int n2)
   if (p1 == NULL)
     {
       printf("Can't allocate mymalloc(%d, %d, %d)\n", size, n1, n2);
+      exit(1);
     }
   p = (void **) malloc(n1 * sizeof(void *));
   if (p == NULL)
     {
       printf("Can't allocate mymalloc(%d, %d, %d)\n", size, n1, n2);
+      exit(1);
     }
   p--;
   for (i = 0; i < n1; i++)
